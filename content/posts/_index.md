@@ -1,6 +1,6 @@
 +++
-title = 'index'
+title = 'aboutme'
 layout = 'index'
-url = '/index/'
+url = ''
 summary = 'asd'
 +++
