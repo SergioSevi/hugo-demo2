@@ -2,4 +2,4 @@ baseURL: "https://sergiosevi.netlify.app"
 languageCode: en-us
 title: Sergio Sevillano
 theme: hugo-profile
-redirect: /aboutme.html
+redirect: aboutme.html
