@@ -1,6 +1,6 @@
 +++
 title = 'Outreach'
-layout = 'about'
+layout = 'outreach'
 url = '/outreach/'
 summary = 'asd'
 +++
