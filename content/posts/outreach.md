@@ -1,6 +1,6 @@
 +++
-title = 'aboutme'
-layout = 'index'
-url = ''
+title = 'Outreach'
+layout = 'about'
+url = '/outreach/'
 summary = 'asd'
 +++
