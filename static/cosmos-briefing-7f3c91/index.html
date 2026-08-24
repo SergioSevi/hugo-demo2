@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://*.workers.dev https://*.cloudflareworkers.com; base-uri 'none'; form-action 'self'; frame-ancestors 'none'">
+  <link rel="icon" href="../lambda.png" type="image/png">
+  <link rel="stylesheet" href="./app.css">
+  <title>Paper feed</title>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="../" aria-label="Return to Sergio Sevillano Muñoz homepage">Sergio Sevillano Muñoz</a>
+      <span id="header-sync-status" class="sync-pill" data-mode="neutral">Loading</span>
+    </div>
+  </header>
+
+  <main class="shell app-shell">
+    <section class="page-intro">
+      <div>
+        <p class="eyebrow">Personal literature dashboard</p>
+        <h1>Paper feed</h1>
+        <p class="release-line">arXiv release <span id="release-date">Loading</span></p>
+      </div>
+      <div class="category-strip" aria-label="Included arXiv categories">
+        <span>astro-ph.CO</span>
+        <span>gr-qc</span>
+        <span>hep-ph</span>
+        <span>hep-th</span>
+      </div>
+    </section>
+
+    <p id="sample-banner" class="notice" hidden>
+      This is bundled sample data. Run the daily paper workflow once to replace it with the current arXiv release.
+    </p>
+
+    <nav class="tabs" aria-label="Paper dashboard tabs" role="tablist">
+      <button class="tab-button active" type="button" role="tab" aria-selected="true" data-tab-button="papers">
+        Papers <span id="papers-tab-count" class="tab-count">0</span>
+      </button>
+      <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab-button="saved">
+        Saved <span id="saved-tab-count" class="tab-count">0</span>
+      </button>
+      <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab-button="authors">
+        Authors and learning
+      </button>
+    </nav>
+
+    <div id="app-loading" class="loading-card" role="status">Loading the feed</div>
+    <div id="app-error" class="error-card" hidden>
+      The feed could not be loaded. Check that the JSON files are present and open this page through the website rather than directly from disk.
+    </div>
+
+    <section id="papers-tab" class="tab-panel" role="tabpanel">
+      <section id="priority-section" class="paper-section priority-section" aria-label="Priority author papers"></section>
+      <section id="papers-section" class="paper-section" aria-label="Main papers"></section>
+      <section id="cross-section" class="paper-section" aria-label="Cross-listed papers"></section>
+    </section>
+
+    <section id="saved-tab" class="tab-panel" role="tabpanel" hidden>
+      <div class="panel-card">
+        <div class="section-heading">
+          <div>
+            <h2>Saved papers</h2>
+            <p>Saved papers remain here across daily releases. Priority-author papers are added automatically.</p>
+          </div>
+        </div>
+        <div id="saved-list" class="paper-list"></div>
+      </div>
+    </section>
+
+    <section id="authors-tab" class="tab-panel" role="tabpanel" hidden>
+      <div class="settings-grid">
+        <section class="panel-card">
+          <div class="section-heading">
+            <div>
+              <h2>Priority authors</h2>
+              <p>These authors always appear first and their papers are saved automatically.</p>
+            </div>
+          </div>
+          <form id="priority-author-form" class="inline-form">
+            <label class="sr-only" for="priority-author-input">Add a priority author</label>
+            <input id="priority-author-input" type="text" autocomplete="off" placeholder="Add an author">
+            <button class="primary-button" type="submit">Add</button>
+          </form>
+          <div id="priority-author-list" class="chip-list"></div>
+        </section>
+
+        <section class="panel-card">
+          <div class="section-heading">
+            <div>
+              <h2>What the feed has learned</h2>
+              <p>Upvotes and downvotes adjust topic, author, and category weights. Positive and negative weights are shown separately by sign.</p>
+            </div>
+          </div>
+          <h3 class="subheading">Authors</h3>
+          <div id="learned-authors" class="weight-list"></div>
+          <h3 class="subheading">Topics</h3>
+          <div id="learned-topics" class="weight-list"></div>
+        </section>
+
+        <section class="panel-card full-width">
+          <div class="section-heading">
+            <div>
+              <h2>Repository sync</h2>
+              <p>Your clicks are always saved in this browser. Add the Worker endpoint and write key once to also store them as JSON on the repository state branch.</p>
+            </div>
+            <span id="sync-status" class="sync-pill" data-mode="neutral">Not configured</span>
+          </div>
+          <div class="sync-form">
+            <label for="sync-endpoint">Worker endpoint</label>
+            <input id="sync-endpoint" type="url" inputmode="url" autocomplete="url" placeholder="https://sergio-paper-feed-state.your-subdomain.workers.dev">
+            <label for="sync-key">Write key</label>
+            <input id="sync-key" type="password" autocomplete="off" placeholder="Stored only in this browser">
+            <div class="button-row">
+              <button id="save-sync-settings" class="primary-button" type="button">Save and connect</button>
+              <button id="sync-now" class="secondary-button" type="button">Sync now</button>
+            </div>
+          </div>
+          <div class="backup-row">
+            <button id="export-state" class="text-button" type="button">Export state JSON</button>
+            <label class="text-button file-button" for="import-state">Import state JSON</label>
+            <input id="import-state" class="visually-hidden-file" type="file" accept="application/json,.json">
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="shell">Unlisted personal page</div>
+  </footer>
+
+  <script type="module" src="./app.mjs"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+name = "sergio-paper-feed-state"
+main = "src/index.mjs"
+compatibility_date = "2026-08-24"
+
+[vars]
+GITHUB_OWNER = "SergioSevi"
+GITHUB_REPO = "hugo-demo2"
+GITHUB_DEFAULT_BRANCH = "hugo-dem2"
+GITHUB_STATE_BRANCH = "paper-feed-state"
+GITHUB_STATE_PATH = "paper-feed-state.json"
+GITHUB_INITIAL_STATE_PATH = "static/cosmos-briefing-7f3c91/data/state.json"
+ALLOWED_ORIGINS = "*"

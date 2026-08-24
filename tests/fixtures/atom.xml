@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:arxiv="http://arxiv.org/schemas/atom">
+  <title>arXiv Query</title>
+  <entry>
+    <id>http://arxiv.org/abs/2608.00001v1</id>
+    <updated>2026-08-24T00:10:00Z</updated>
+    <published>2026-08-24T00:10:00Z</published>
+    <title>Dark energy and modified gravity</title>
+    <summary>We study scalar tensor dark energy and screened fifth forces.</summary>
+    <author><name>Priority Person</name></author>
+    <arxiv:primary_category term="astro-ph.CO"/>
+    <category term="astro-ph.CO"/>
+    <category term="gr-qc"/>
+    <link href="http://arxiv.org/abs/2608.00001v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2608.00001v1" rel="related" type="application/pdf"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.00002v1</id>
+    <updated>2026-08-24T00:20:00Z</updated>
+    <published>2026-08-24T00:20:00Z</published>
+    <title>Particle production in the early universe</title>
+    <summary>Phenomenology of a cosmological phase transition.</summary>
+    <author><name>Second Author</name></author>
+    <arxiv:primary_category term="hep-ph"/>
+    <category term="hep-ph"/>
+    <category term="astro-ph.CO"/>
+    <link href="http://arxiv.org/abs/2608.00002v1" rel="alternate" type="text/html"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.00003v1</id>
+    <updated>2026-08-24T00:30:00Z</updated>
+    <published>2026-08-24T00:30:00Z</published>
+    <title>Black hole perturbations</title>
+    <summary>Wave propagation near a compact object.</summary>
+    <author><name>Third Author</name></author>
+    <arxiv:primary_category term="gr-qc"/>
+    <category term="gr-qc"/>
+    <link href="http://arxiv.org/abs/2608.00003v1" rel="alternate" type="text/html"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.00004v1</id>
+    <updated>2026-08-24T00:40:00Z</updated>
+    <published>2026-08-24T00:40:00Z</published>
+    <title>Quantum fields and holography</title>
+    <summary>A formal analysis of quantum field theory.</summary>
+    <author><name>Fourth Author</name></author>
+    <arxiv:primary_category term="hep-th"/>
+    <category term="hep-th"/>
+    <link href="http://arxiv.org/abs/2608.00004v1" rel="alternate" type="text/html"/>
+  </entry>
+</feed>

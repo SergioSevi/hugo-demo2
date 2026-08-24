@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "revision": 0,
+  "updated_at": "2026-08-24T00:00:00Z",
+  "priority_authors_updated_at": "2026-08-24T00:00:00Z",
+  "priority_authors": [
+    {
+      "name": "Edmund J. Copeland",
+      "aliases": ["Edmund Copeland", "E. J. Copeland", "E.J. Copeland"]
+    },
+    {
+      "name": "Peter Millington",
+      "aliases": ["Peter William Millington", "P. Millington"]
+    },
+    {
+      "name": "Michael Spannowsky",
+      "aliases": ["M. Spannowsky"]
+    },
+    {
+      "name": "Adam Moss",
+      "aliases": ["A. Moss"]
+    },
+    {
+      "name": "Jade M. M. White",
+      "aliases": ["Jade White", "J. M. M. White"]
+    },
+    {
+      "name": "Djuna Croon",
+      "aliases": ["D. Croon"]
+    },
+    {
+      "name": "Andrei Lazanu",
+      "aliases": ["A. Lazanu"]
+    },
+    {
+      "name": "Torsten Bringmann",
+      "aliases": ["T. Bringmann"]
+    },
+    {
+      "name": "Arturo de Giorgi",
+      "aliases": ["Arturo De Giorgi", "A. de Giorgi", "A. De Giorgi"]
+    },
+    {
+      "name": "Ivan Martinez Soler",
+      "aliases": ["Ivan Martinez-Soler", "Iván Martínez-Soler", "I. Martinez Soler", "I. Martinez-Soler"]
+    },
+    {
+      "name": "Clare Burrage",
+      "aliases": ["C. Burrage"]
+    },
+    {
+      "name": "Christopher J. Conselice",
+      "aliases": ["Christopher Conselice", "C. J. Conselice"]
+    },
+    {
+      "name": "Mark Trodden",
+      "aliases": ["M. Trodden"]
+    }
+  ],
+  "votes": {},
+  "saved": {},
+  "auto_save_opt_out": {},
+  "model": {
+    "authors": {},
+    "topics": {},
+    "categories": {}
+  }
+}

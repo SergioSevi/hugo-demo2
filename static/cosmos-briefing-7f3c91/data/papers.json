@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-24T15:30:00Z",
+  "release_date": "Monday, 24 August 2026",
+  "sample": true,
+  "categories": [
+    "astro-ph.CO",
+    "gr-qc",
+    "hep-ph",
+    "hep-th"
+  ],
+  "papers": [
+    {
+      "id": "2608.20415",
+      "title": "A comparative study of emergent dark energy models",
+      "authors": [
+        "Andrés García-Rivera",
+        "A. Hernández-Almada",
+        "Miguel A. García-Aspeitia",
+        "V. Motta"
+      ],
+      "summary": "Late emergent dark energy models are compared using several cosmological data sets.",
+      "published": "2026-08-24T00:00:00Z",
+      "updated": "2026-08-24T00:00:00Z",
+      "primary_category": "astro-ph.CO",
+      "categories": [
+        "astro-ph.CO",
+        "gr-qc"
+      ],
+      "source_categories": [
+        "astro-ph.CO"
+      ],
+      "listing_type": "new",
+      "url": "https://arxiv.org/abs/2608.20415",
+      "listing_order": 0
+    },
+    {
+      "id": "2608.20457",
+      "title": "One-point matter PDFs beyond TopHat filters",
+      "authors": [
+        "Anton Chudaykin",
+        "Alexander M. Kayssi",
+        "Sergey Sibiryakov"
+      ],
+      "summary": "A path integral description of matter density probability distributions for general spherical filters.",
+      "published": "2026-08-24T00:00:00Z",
+      "updated": "2026-08-24T00:00:00Z",
+      "primary_category": "astro-ph.CO",
+      "categories": [
+        "astro-ph.CO",
+        "hep-ph",
+        "hep-th"
+      ],
+      "source_categories": [
+        "astro-ph.CO"
+      ],
+      "listing_type": "new",
+      "url": "https://arxiv.org/abs/2608.20457",
+      "listing_order": 1
+    },
+    {
+      "id": "2608.21323",
+      "title": "Diversity of Galaxy Centers from Small-Scale Isocurvature",
+      "authors": [
+        "Jessica N. Lopez-Sanchez",
+        "Wen Yin"
+      ],
+      "summary": "Small-scale isocurvature in an ultralight component is studied as a source of diverse dark matter distributions.",
+      "published": "2026-08-24T00:00:00Z",
+      "updated": "2026-08-24T00:00:00Z",
+      "primary_category": "astro-ph.CO",
+      "categories": [
+        "astro-ph.CO",
+        "gr-qc",
+        "hep-ph"
+      ],
+      "source_categories": [
+        "astro-ph.CO"
+      ],
+      "listing_type": "new",
+      "url": "https://arxiv.org/abs/2608.21323",
+      "listing_order": 2
+    },
+    {
+      "id": "2608.21353",
+      "title": "High-Energy Neutrino Constraints on memory burdened Bardeen and Kerr Primordial Black Holes",
+      "authors": [
+        "Md Riajul Haque",
+        "Suvashis Maity"
+      ],
+      "summary": "High-energy neutrino data are used to constrain memory-burdened primordial black holes.",
+      "published": "2026-08-24T00:00:00Z",
+      "updated": "2026-08-24T00:00:00Z",
+      "primary_category": "astro-ph.CO",
+      "categories": [
+        "astro-ph.CO",
+        "hep-ph"
+      ],
+      "source_categories": [
+        "astro-ph.CO"
+      ],
+      "listing_type": "new",
+      "url": "https://arxiv.org/abs/2608.21353",
+      "listing_order": 3
+    },
+    {
+      "id": "2608.20085",
+      "title": "Effective Field Theory for Freezing Gravity with Minimally Coupled Matter",
+      "authors": [
+        "Zhibang Yao"
+      ],
+      "summary": "Cosmological perturbations and stability are studied in freezing gravity coupled to matter.",
+      "published": "2026-08-24T00:00:00Z",
+      "updated": "2026-08-24T00:00:00Z",
+      "primary_category": "gr-qc",
+      "categories": [
+        "gr-qc",
+        "astro-ph.CO"
+      ],
+      "source_categories": [
+        "astro-ph.CO"
+      ],
+      "listing_type": "cross",
+      "url": "https://arxiv.org/abs/2608.20085",
+      "listing_order": 4
+    },
+    {
+      "id": "2608.20745",
+      "title": "Qubits for Dark Matter Hunting",
+      "authors": [
+        "Takeo Moroi"
+      ],
+      "summary": "An introductory review of qubits and quantum sensing for wave-like dark matter detection.",
+      "published": "2026-08-24T00:00:00Z",
+      "updated": "2026-08-24T00:00:00Z",
+      "primary_category": "hep-ph",
+      "categories": [
+        "hep-ph",
+        "astro-ph.CO",
+        "hep-ex",
+        "quant-ph"
+      ],
+      "source_categories": [
+        "astro-ph.CO"
+      ],
+      "listing_type": "cross",
+      "url": "https://arxiv.org/abs/2608.20745",
+      "listing_order": 5
+    }
+  ]
+}

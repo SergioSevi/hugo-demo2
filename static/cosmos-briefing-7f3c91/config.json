@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "title": "Paper feed",
+  "categories": [
+    {
+      "code": "astro-ph.CO",
+      "name": "Cosmology and Nongalactic Astrophysics"
+    },
+    {
+      "code": "gr-qc",
+      "name": "General Relativity and Quantum Cosmology"
+    },
+    {
+      "code": "hep-ph",
+      "name": "High Energy Physics - Phenomenology"
+    },
+    {
+      "code": "hep-th",
+      "name": "High Energy Physics - Theory"
+    }
+  ],
+  "sync": {
+    "default_endpoint": ""
+  }
+}
